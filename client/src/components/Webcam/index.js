@@ -49,7 +49,7 @@ class WebcamCapture extends React.Component {
     formData.append(0, this.dataURItoBlob(encodedImageString));
 
     //sends the img to server
-    fetch(`https://second-time-around.herokuapp.com:3001/image-upload`, {
+    fetch(`https://rocky-fjord-92993.herokuapp.com:3001/image-upload`, {
       method: 'POST',
       body: formData
     })
